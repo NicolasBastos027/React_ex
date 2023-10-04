@@ -1,10 +1,36 @@
-* {
-margin: 0;
-padding: 0;
+.app{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(90deg, #002F52 35%, #326589);
 }
-.logo{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.app_header{
+    display: flex;
+    background-color: #ffff;
+    justify-content: center;
 }
-
+li{
+    list-style: none;
+ 
+}
+.opcoes{
+    display: flex;
+}
+.opcao{
+    min-width: 120px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    padding: 0 5px;
+    cursor: pointer;
+}
+.icones{
+    display: flex;
+    align-items: center;
+}
+.icone{
+    margin-right: 40px;
+    width: 25px;
+}

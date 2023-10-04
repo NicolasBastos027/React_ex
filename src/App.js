@@ -1,14 +1,16 @@
 import './App.css';
-import logo from './imagens/logo.svg'
+import Logo from './componentes/logo'
+import OpcoesHeader from './componentes/opcoes_header'
+import Icones from './componentes/icones'
+
 
 function App() {
   return (
     <div className='app'>
-      <header className='app-reader'>
-        <div className='logo'>
-          <img src={logo} alt='logo'></img>
-          <p><strong>Alura</strong>Books</p>
-        </div>
+      <header className='app_header'>
+        <Logo></Logo>
+        <OpcoesHeader></OpcoesHeader>
+        <Icones></Icones>
       </header>
     </div>
   );
