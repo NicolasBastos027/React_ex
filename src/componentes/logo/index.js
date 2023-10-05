@@ -1,13 +1,22 @@
 import logoimg from '../..//imagens/logo.svg'
-import './style.css'
+import styled from 'styled-components';
 
+const LogoConstainer = styled.div`
+display: flex;
+flex-direction: row;
+align-items: center;
+font-size: 30px;
+`
+const LogoImg = styled.img`
+    margin-right: 10px;
+`
 
 function logo() {
     return (
-        <div className='logo'>
-            <img src={logoimg} alt='logo' className='logoimg'></img>
+        <LogoConstainer>
+            <LogoImg src={logoimg} alt='logo'/>
             <p><strong>Alura</strong>Books</p>
-        </div>
+        </LogoConstainer>
     );
 }
 export default logo
